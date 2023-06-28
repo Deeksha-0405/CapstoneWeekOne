@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -237,10 +237,13 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-05-11T18:35:45.821+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Enablement Captstone - Content,/apps/enablementCapstone/components/form/container]">
+                    components="[group:General,/apps/enablementCapstone/components/accordion,/apps/enablementCapstone/components/breadcrumb,/apps/enablementCapstone/components/button,/apps/enablementCapstone/components/carousel,/apps/enablementCapstone/components/container,/apps/enablementCapstone/components/contentfragment,/apps/enablementCapstone/components/contentfragmentlist,/apps/enablementCapstone/components/download,/apps/enablementCapstone/components/embed,/apps/enablementCapstone/components/experiencefragment,/apps/enablementCapstone/components/helloworld,/apps/enablementCapstone/components/homebanner,/apps/enablementCapstone/components/image,/apps/enablementCapstone/components/list,/apps/enablementCapstone/components/pdfviewer,/apps/enablementCapstone/components/progressbar,/apps/enablementCapstone/components/separator,/apps/enablementCapstone/components/sharing,/apps/enablementCapstone/components/tabs,/apps/enablementCapstone/components/teaser,/apps/enablementCapstone/components/text,/apps/enablementCapstone/components/title,group:Enablement Captstone - Form,group:Enablement Captstone - Structure]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -275,10 +278,13 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-05-05T16:20:42.993+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Enablement Captstone - Content,/apps/enablementCapstone/components/form/container]">
+                    components="[/apps/enablementCapstone/components/footer,group:Capstone-Header,group:Enablement Captstone - Content,/apps/enablementCapstone/components/form/container]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">

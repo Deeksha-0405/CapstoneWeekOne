@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-05-12T13:29:26.748+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/enablementCapstone/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="CapstoneFooter"
+        sling:resourceType="enablementCapstone/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="enablementCapstone/components/container"
+            layout="responsiveGrid">
+            <footer_copy
+                jcr:created="{Date}2022-05-05T16:09:05.767+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-05-12T13:29:26.640+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="enablementCapstone/components/footer"
+                aboutText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                footerLogo="/content/dam/enablementCapstone/header/white_logo.png"/>
+        </root>
+    </jcr:content>
+</jcr:root>
