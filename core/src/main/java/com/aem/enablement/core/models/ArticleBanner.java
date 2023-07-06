@@ -1,6 +1,6 @@
 package com.aem.enablement.core.models;
 
-import org.apache.sling.models.annotations.injectorspecific.RequestAttribute;
+
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 
@@ -15,7 +15,7 @@ import org.apache.sling.models.annotations.Model;
 
 public class ArticleBanner {
 
-	@ValueMapValue
+		@ValueMapValue
 		private String bannerText;
 		
 		@ValueMapValue
@@ -37,18 +37,6 @@ public class ArticleBanner {
 			this.bannerImage = bannerImage;
 		}
 		
-		@RequestAttribute(name = "rAttribute")
-        private String publishdate;
-
-		public String getPublishdate() {
-			return publishdate;
-		}
-
-		public void setPublishdate(String publishdate) {
-			this.publishdate = publishdate;
-		}
-		
-
 		@ValueMapValue
 		private Calendar lastModified;
 		
@@ -71,12 +59,6 @@ public class ArticleBanner {
 			this.lastModified = lastModified;
 		}
 
-		public Resource getContentResource() {
-			// TODO Auto-generated method stub
-			return null;
-		}
-
-		
 		
 		
 		

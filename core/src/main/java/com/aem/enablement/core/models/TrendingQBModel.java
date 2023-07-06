@@ -24,19 +24,7 @@ public class TrendingQBModel {
 	private static final Logger LOGGER = LoggerFactory.getLogger(TrendingQBModel.class);
 
 	@Inject
-	private SlingHttpServletRequest request;
-
-	@Inject
-	@SlingObject
-	private Resource resource;
-
-	@Inject
-	@SlingObject
-	private ResourceResolver resourceResolver;
-
-	@Inject
 	private TrendingService tservice;
-	
 
 	String path = "/content/enablementCapstone/us/en/article";
 
@@ -45,11 +33,10 @@ public class TrendingQBModel {
 	@PostConstruct
 	protected void init() throws RepositoryException, LoginException {
 		LOGGER.info("path Dynamicxxxx =====================>>");
-	
+
 		trendingmodelitemlist = tservice.getTrendingData();
 		LOGGER.info("List Inside model=====================>>" + trendingmodelitemlist);
-		}
-		
+	}
 
 	public List<Trending> getTrendingmodelitemlist() {
 		return trendingmodelitemlist;
@@ -58,6 +45,5 @@ public class TrendingQBModel {
 	public void setTrendingmodelitemlist(List<Trending> trendingmodelitemlist) {
 		this.trendingmodelitemlist = trendingmodelitemlist;
 	}
-
 
 }

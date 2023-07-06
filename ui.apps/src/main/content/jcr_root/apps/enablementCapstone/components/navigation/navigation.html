@@ -1,0 +1,4 @@
+<sly data-sly-use.navigation="com.adobe.cq.wcm.core.components.models.Navigation">
+	<sly data-sly-use.menuTemplate="menu.html"></sly>
+	<sly data-sly-call="${menuTemplate.renderNav @ items=navigation.items}"/>
+</sly>

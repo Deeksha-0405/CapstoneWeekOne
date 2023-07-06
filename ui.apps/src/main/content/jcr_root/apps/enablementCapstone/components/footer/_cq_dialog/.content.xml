@@ -23,7 +23,7 @@
                         fieldLabel="Footer Logo"
                         name="./footerLogo"
                         required="{Boolean}true"
-                        rootPath="/content/dam/enablementCapstone"/>
+                        rootPath="/content/dam"/>
                 </items>
             </column>
         </items>

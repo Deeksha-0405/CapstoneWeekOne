@@ -1,43 +1,51 @@
 
-<sly data-sly-use.sheader="com.aem.enablement.core.models.SecondaryHeader"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<sly data-sly-use.sheader="com.aem.enablement.core.models.HeaderSecondary" />
 
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3 fh5co_padding_menu">
-                <img src="${sheader.logo}" alt="img" class="fh5co_logo_width"/>
-            </div>
-            <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
-                <div class="text-center d-inline-block">
-                    <a class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-search"></i></div></a>
-                </div>
-                <div class="text-center d-inline-block">
-                    <a class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-linkedin"></i></div></a>
-                </div>
-                <div class="text-center d-inline-block">
-                    <a class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-google-plus"></i></div></a>
-                </div>
-                <div class="text-center d-inline-block">
-                    <a href="https://twitter.com/fh5co" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
-                </div>
-                <div class="text-center d-inline-block">
-                    <a href="https://fb.com/fh5co" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-facebook"></i></div></a>
-                </div>
-               <sly data-sly-test="${sheader.displayLanguages == 'true'}">
-					<div class="d-inline-block text-center dd_position_relative ">
-						<select class="form-control fh5co_text_select_option">
-						<sly data-sly-list.langList = "${sheader.languagesitem.listChildren}">
-							<option>${langList.languages} </option>
-						</sly>
-						</select>
-                    </div>
-				</sly>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-3 fh5co_padding_menu"> <img src="${properties.logo}" alt="img" class="fh5co_logo_width" /> </div>
+				<div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
+					<div class="text-center d-inline-block">
+						<a class="fh5co_display_table">
+							<div class="fh5co_verticle_middle"><i class="fa fa-search"></i></div>
+						</a>
+					</div>
+					<div class="text-center d-inline-block">
+						<a class="fh5co_display_table">
+							<div class="fh5co_verticle_middle"><i class="fa fa-linkedin"></i></div>
+						</a>
+					</div>
+					<div class="text-center d-inline-block">
+						<a class="fh5co_display_table">
+							<div class="fh5co_verticle_middle"><i class="fa fa-google-plus"></i></div>
+						</a>
+					</div>
+					<div class="text-center d-inline-block">
+						<a href="https://twitter.com/fh5co" target="_blank" class="fh5co_display_table">
+							<div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div>
+						</a>
+					</div>
+					<div class="text-center d-inline-block">
+						<a href="https://fb.com/fh5co" target="_blank" class="fh5co_display_table">
+							<div class="fh5co_verticle_middle"><i class="fa fa-facebook"></i></div>
+						</a>
+					</div>
+					<!--<div class="d-inline-block text-center"><img src="images/country.png" alt="img" class="fh5co_country_width"/></div>-->
+					<sly data-sly-test="${sheader.displayLanguages == 'true'}">
+						<div class="d-inline-block text-center dd_position_relative ">
+							<select class="form-control fh5co_text_select_option">
+								<sly data-sly-list.langList="${sheader.languagesitem.listChildren}">
+									<option> ${langList.languages} </option>
+								</sly>
+							</select>
+						</div>
+					</sly>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>

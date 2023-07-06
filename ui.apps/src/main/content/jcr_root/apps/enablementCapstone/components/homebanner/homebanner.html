@@ -1,18 +1,17 @@
 <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" ></sly>
-<sly data-sly-use.articlecard="com.aem.enablement.core.models.HomeBanner"  />
-
+<sly data-sly-use.articlecardbanner="com.aem.enablement.core.models.HomeBanner"  />
 
 <div class="container-fluid paddding mb-5">
 	<div class="row mx-0">
-		<sly data-sly-list.card="${articlecard.articlelist}">
-		<sly data-sly-test="${cardList.index==0}">
+		<sly data-sly-list.articlecard="${articlecardbanner.articlelist}">
+		<sly data-sly-test="${articlecardList.index==0}">
         <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
-            <div class="fh5co_suceefh5co_height"><img src="${card.bannerImage}" alt="img"/>
+            <div class="fh5co_suceefh5co_height"><img src="${articlecard.bannerImage}" alt="img"/>
                 <div class="fh5co_suceefh5co_height_position_absolute"></div>
                 <div class="fh5co_suceefh5co_height_position_absolute_font">
-                    <div class=""><a class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;${'MMMM dd, yyyy' @ format=card.lastModified}
+                    <div class=""><a class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;${'MMMM dd, yyyy' @ format=articlecard.lastModified}
                     </a></div>
-                    <div class=""><a href="${card.path @ extension='html'}" class="fh5co_good_font"> ${card.bannerText} </a></div>
+                    <div class=""><a href="${articlecard.path @ extension='html'}" class="fh5co_good_font"> ${articlecard.bannerText} </a></div>
                 </div>
             </div>
         </div>
@@ -20,14 +19,14 @@
 		</sly>
         <div class="col-md-6">
 		    <div class="row">
-			<sly data-sly-list.card="${articlecard.articlelist}">
-			<sly data-sly-test="${cardList.index!=0 && cardList.index < 5 }">
+			<sly data-sly-list.articlecard="${articlecardbanner.articlelist}">
+			<sly data-sly-test="${articlecardList.index> 0 && articlecardList.index < 5 }">
                 <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
-                    <div class="fh5co_suceefh5co_height_2"><img src="${card.bannerImage}" alt="img"/>
+                    <div class="fh5co_suceefh5co_height_2"><img src="${articlecard.bannerImage}" alt="img"/>
                         <div class="fh5co_suceefh5co_height_position_absolute"></div>
                         <div class="fh5co_suceefh5co_height_position_absolute_font_2">
-                            <div class=""><a class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;${'MMMM dd, yyyy' @ format=card.lastModified} </a></div>
-                            <div class=""><a href="${card.path @ extension='html'}" class="fh5co_good_font_2"> ${card.bannerText} </a></div>
+                            <div class=""><a class="color_fff"> <i class="fa fa-clock-o"></i>&nbsp;&nbsp;${'MMMM dd, yyyy' @ format=articlecard.lastModified} </a></div>
+                            <div class=""><a href="${articlecard.path @ extension='html'}" class="fh5co_good_font_2"> ${articlecard.bannerText} </a></div>
                         </div>
                     </div>
                 </div>
@@ -37,4 +36,3 @@
         </div>
     </div>
 </div>
-

@@ -15,14 +15,17 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/textfield"
                         fieldLabel="Banner Text"
-                        name="./bannerText"/>
+                        maxlength="100"
+                        name="./bannerText"
+                        required="{Boolean}true"/>
                     <bannerimage
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                         fieldDescription="Link to banner image"
                         fieldLabel="Banner Image"
                         name="./bannerImage"
-                        rootPath="/content/dam/enablementCapstone"/>
+                        required="{Boolean}true"
+                        rootPath="/content/dam"/>
                 </items>
             </column>
         </items>
